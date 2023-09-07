@@ -532,6 +532,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Python
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -541,6 +552,46 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bases" class="md-nav__link">
+    Bases
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-fonctions" class="md-nav__link">
+    Les fonctions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-conditions" class="md-nav__link">
+    Les conditions
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -730,6 +781,26 @@
 
               
             
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cheatsheet_py/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -776,6 +847,35 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bases" class="md-nav__link">
+    Bases
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-fonctions" class="md-nav__link">
+    Les fonctions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-conditions" class="md-nav__link">
+    Les conditions
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -793,6 +893,115 @@
 
 
 <h1 id="python-py">Python (.py)</h1>
+<h2 id="bases">Bases</h2>
+<p>Afficher dans le terminal "Hello World !"</p>
+<ul>
+<li><strong>print()</strong></li>
+</ul>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello World !&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Arguments du print()</p>
+<ul>
+<li><strong>print("lol", sep="", end="")</strong></li>
+</ul>
+<p>La fonction print peut prendre plusieurs arguements tels que <code>sep</code> ou <code>end</code>
+- sep : permet de définir les séparateurs dans le print, par défaut <code>sep = " "</code>
+- end : permet de définir la fin de la ligne qui est par défaut <code>end = "\n"</code> qui veut dire retour à la ligne.</p>
+<p>Demander à l'utilisateur d'entrer quelque chose</p>
+<ul>
+<li><strong>Input()</strong> </li>
+</ul>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Quel est votre nom :&quot;</span> <span class="p">)</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bonjour &quot;</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="s2">&quot;!&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Vérififer le type de la variable</p>
+<ul>
+<li><strong>type()</strong></li>
+</ul>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">my_var</span> <span class="o">=</span> <span class="s2">&quot;lol&quot;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nb">type</span><span class="p">(</span><span class="n">my_var</span><span class="p">)</span>
+</span></code></pre></div>
+<blockquote>
+<p>Ressort le type de la variable qui est <code>str</code> dans ce cas là</p>
+</blockquote>
+<p>Le python est un langage du type <strong>dynamique</strong>, une variable n'a pas de type prédéfini parmis cette liste :
+- integer (nombre) 
+- string (chaine de caractères) 
+- boolean (vrai ou faux)
+- ...</p>
+<p>exemple :
+<div class="language-py highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;lol&quot;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span></code></pre></div></p>
+<blockquote>
+<p>Affichera <code>lol</code> sans erreur.</p>
+</blockquote>
+<p>Pour transformer une chaine de caractère en entier, on appelle ce concept le <strong>cast</strong>
+- str =&gt; int :
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>number = &quot;12&quot;
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>number = int(number)
+</span></code></pre></div></p>
+<h2 id="les-fonctions">Les fonctions</h2>
+<p>Les fonctions font partis des bases en programmation et notamment en python.</p>
+<p>Voici un exemple de fonction qui affiche "Hello World", nous allons juste créer une fonction sans arguments.</p>
+<p><div class="language-py highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">def</span> <span class="nf">hello_world</span><span class="p">():</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello World&quot;</span><span class="p">)</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">hello_world</span><span class="p">()</span>
+</span></code></pre></div>
+Voici un exemple de fonction avec argument et qui affiche "Bonjour" et votre nom</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">def</span> <span class="nf">hello_you</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bonjour&quot;</span><span class="p">,</span><span class="n">name</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Pour aller un peu plus loin, nous allons créer une fonction du type "none" ou "procédure"</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">def</span> <span class="nf">calcul_addition</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>  <span class="k">return</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="n">nombre_a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;a = &quot;</span><span class="p">))</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="n">nombre_b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;b = &quot;</span><span class="p">))</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">calcul_addition</span><span class="p">(</span><span class="n">nombre_a</span><span class="p">,</span><span class="n">nombre_b</span><span class="p">))</span>
+</span></code></pre></div>
+<h2 id="les-conditions">Les conditions</h2>
+<p>Pour vérifier le contenue des variables et renvoyer un boolean (pour vérifier si / sinon si / sinon. Les controll flow <code>if elif et else</code> vous permettent de faire cela</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Entrez votre age : &quot;</span><span class="p">))</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">if</span> <span class="n">age</span> <span class="o">&lt;</span> <span class="mi">18</span><span class="p">:</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Vous êtes mineur&quot;</span><span class="p">)</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="k">elif</span> <span class="n">age</span> <span class="o">&gt;</span> <span class="mi">18</span> <span class="ow">and</span> <span class="n">age</span> <span class="o">&lt;</span> <span class="mi">50</span><span class="p">:</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Vous êtes Majeur&quot;</span><span class="p">)</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="k">else</span><span class="p">:</span> <span class="c1"># Va prendre tout ce qui est supérieur a 50</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Vous êtes un vieux du cul&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>L'opérateur <code>and</code> va permettre de vérifier 2 conditions, pour le <code>elif</code> (sinon si) cela va vérifier si l'age est supérieur a 18 et inférieur à 50. Si une des deux conditions n'est pas remplis cela va skip la condition et ne pas rentrer dedans. Dans le même genre vous avez l'opérateur <code>or</code> qui permet de vérifier plusieurs conditions, et si l'une des conditions est remplie alors on va rentrer dans le controll flow.</p>
+<p>Il existe une autre façon de poser des conditions que <code>if elif else</code>, cela permet de rendre le code plus lisible losque vous avez beaucoup de conditions qui s'enchainent </p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">choice</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;1 ou 2 : &quot;</span><span class="p">))</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="k">match</span> <span class="n">choice</span><span class="p">:</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>    <span class="k">case</span> <span class="mi">1</span><span class="p">:</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>        <span class="nb">print</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>    <span class="k">case</span> <span class="mi">2</span><span class="p">:</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>        <span class="nb">print</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Pour résumer :</p>
+<ul>
+<li>if = si + condition</li>
+<li>elif = sinon si + condition</li>
+<li>
+<p>else : sinon =&gt; Prend tout le reste</p>
+</li>
+<li>
+<p>AND = opérateur booléen qui vérifie que plusieurs conditions doivent êtres remplies</p>
+</li>
+<li>
+<p>OR = opérateur booléen qui vérifi si l'une des conditions est remplie</p>
+</li>
+<li>
+<p>match + variable a vérifier</p>
+<ul>
+<li>case = condition a vérifier</li>
+</ul>
+</li>
+</ul>
+<p>Pour plus de contenu voir la page <a href="../cheatsheet_py/">Python CheatSheet</a></p>
 
 
 
