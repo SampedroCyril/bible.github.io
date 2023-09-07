@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../html/">
+        <link rel="prev" href="../java/">
       
       
-        <link rel="next" href="../js/">
+        <link rel="next" href="../sql/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>PHP - La Bible du dev (L'évangile selon CS)</title>
+        <title>Python - La Bible du dev (L'évangile selon CS)</title>
       
     
     
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#php-php" class="md-skip">
+        <a href="#python-py" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              PHP
+              Python
             
           </span>
         </div>
@@ -441,29 +441,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    PHP
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../php/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -472,40 +452,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#concepts" class="md-nav__link">
-    Concepts
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#fonctions-integrees" class="md-nav__link">
-    Fonctions intégrées
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -575,9 +521,18 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../py/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -586,6 +541,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -820,28 +776,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#concepts" class="md-nav__link">
-    Concepts
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#fonctions-integrees" class="md-nav__link">
-    Fonctions intégrées
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -858,31 +792,7 @@
   
 
 
-<h1 id="php-php">PHP (.php)</h1>
-<h2 id="concepts">Concepts</h2>
-<p><strong>Conditions Ternaires</strong>
-<div class="language-php highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="x">// CONCEPT</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="x">(Condition) ? (Statement1) : (Statement2);</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="x">Variable = (Condition) ? (Statement1) : (Statement2);</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="x">// EXEMPLE</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="cp">&lt;?php</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>  <span class="nv">$a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>  <span class="nv">$b</span> <span class="o">=</span> <span class="nv">$a</span> <span class="o">&gt;</span> <span class="mi">15</span> <span class="o">?</span> <span class="mi">20</span> <span class="o">:</span> <span class="mi">5</span><span class="p">;</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>  <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;Value of b is &quot;</span> <span class="o">.</span> <span class="nv">$b</span><span class="p">);</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="c1">// Autre exemple</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="nv">$ad1</span> <span class="o">=</span> <span class="nb">isset</span><span class="p">(</span><span class="nv">$_SESSION</span><span class="p">[</span><span class="s2">&quot;adresse_delegue0&quot;</span><span class="p">])</span> <span class="o">?</span> <span class="nv">$_SESSION</span><span class="p">[</span><span class="s2">&quot;adresse_delegue0&quot;</span><span class="p">]</span> <span class="o">:</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="cp">?&gt;</span>
-</span></code></pre></div>
-Output
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Value of b is 5
-</span></code></pre></div></p>
-<p><a href="https://stacklima.com/php-operateur-ternaire/">Lien opérateurs ternaires PHP</a></p>
-<h2 id="fonctions-integrees">Fonctions intégrées</h2>
-<p>(PHP 8.2.9)</p>
-<ul>
-<li><code>mb_convert_encoding($chaine, 'ISO-8859-1')</code> : Converti en ISO</li>
-<li><code>mb_convert_encoding($chaine, 'UTF-8')</code> : Converti en UTF-8</li>
-</ul>
+<h1 id="python-py">Python (.py)</h1>
 
 
 
